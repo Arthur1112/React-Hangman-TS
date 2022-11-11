@@ -1,20 +1,29 @@
 .HANGMAN_CONTAINER {
   position: relative;
+  right: 44px;
+  top: 20px;
 }
 
 .HEAD {
   width: 50px;
+  z-index: 1001;
   height: 50px;
   border-radius: 100%;
-  border: 10px solid black;
+  border: 10px solid white;
   position: absolute;
   top: 50px;
   right: -30px;
+  box-shadow: 0 0 30px magenta, 0 0 7px magenta, 0 0 15px magenta,
+    0 0 15px magenta inset;
 }
 .BODY {
   width: 10px;
+  z-index: 1000;
+
   height: 100px;
-  background-color: black;
+  background-color: white;
+  box-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px magenta,
+    0 0 15px magenta;
   position: absolute;
   top: 120px;
   right: 0;
@@ -22,7 +31,9 @@
 .RIGHT_ARM {
   width: 100px;
   height: 10px;
-  background-color: black;
+  background-color: white;
+  box-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px magenta,
+    0 0 15px magenta;
   position: absolute;
   top: 150px;
   right: -100px;
@@ -31,7 +42,9 @@
 .LEFT_ARM {
   width: 100px;
   height: 10px;
-  background-color: black;
+  background-color: white;
+  box-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px magenta,
+    0 0 15px magenta;
   position: absolute;
   top: 150px;
   right: 10px;
@@ -40,7 +53,9 @@
 .RIGHT_LEG {
   width: 100px;
   height: 10px;
-  background-color: black;
+  background-color: white;
+  box-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px magenta,
+    0 0 15px magenta;
   position: absolute;
   top: 210px;
   right: -90px;
@@ -49,7 +64,9 @@
 .LEFT_LEG {
   width: 100px;
   height: 10px;
-  background-color: black;
+  background-color: white;
+  box-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px magenta,
+    0 0 15px magenta;
   position: absolute;
   top: 210px;
   right: 0;
@@ -59,7 +76,9 @@
 .ROPE {
   height: 50px;
   width: 10px;
-  background-color: black;
+  background-color: cyan;
+  box-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px magenta,
+    0 0 15px magenta;
   margin-left: 120px;
   position: absolute;
   top: 0;
@@ -69,19 +88,25 @@
 .SUPPORT_BEAM {
   height: 10px;
   width: 200px;
-  background-color: black;
+  background-color: cyan;
+  box-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px magenta,
+    0 0 15px magenta;
   margin-left: 120px;
 }
 
 .MAIN_BEAM {
   height: 400px;
   width: 10px;
-  background-color: black;
+  background-color: cyan;
+  box-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px magenta,
+    0 0 15px magenta;
   margin-left: 120px;
 }
 
 .FLOOR_SUPPORT {
   height: 10px;
   width: 250px;
-  background-color: black;
+  background-color: cyan;
+  box-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px magenta,
+    0 0 15px magenta;
 }

@@ -44,27 +44,36 @@ export function KeyBoard({
   return (
     <div
       style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(75px, 1fr))",
-        gap: ".5rem",
+        alignSelf: "stretch",
+        width: "100%",
+        marginTop: "3rem",
+        marginBottom: "3rem",
       }}
     >
-      {KEYS.map((key) => {
-        const isActive = activeLetters.includes(key);
-        const isInactive = inactiveLetters.includes(key);
-        return (
-          <button
-            onClick={() => addGuessedLetter(key)}
-            className={`${styles.btn} ${isActive ? styles.active : ""} ${
-              isInactive ? styles.inactive : ""
-            }`}
-            key={key}
-            disabled={isInactive || isActive || disabled}
-          >
-            {key}
-          </button>
-        );
-      })}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(75px, 1fr))",
+          gap: ".5rem",
+        }}
+      >
+        {KEYS.map((key) => {
+          const isActive = activeLetters.includes(key);
+          const isInactive = inactiveLetters.includes(key);
+          return (
+            <button
+              onClick={() => addGuessedLetter(key)}
+              className={`${styles.btn} ${isActive ? styles.active : ""} ${
+                isInactive ? styles.inactive : ""
+              }`}
+              key={key}
+              disabled={isInactive || isActive || disabled}
+            >
+              {key}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }

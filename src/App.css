@@ -1,0 +1,56 @@
+body {
+  border: 8px solid;
+  border-color: darkmagenta magenta;
+  outline: 8px ridge cyan;
+  outline-offset: 4px;
+  background-color: black;
+  height: 100%;
+  padding: 10px;
+  margin: 25px;
+}
+.game-result {
+  color: white;
+  /* font-family: "Yellowtail", cursive; */
+  text-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px black, 0 0 15px black;
+}
+
+.hangman-word {
+  border-width: 1rem;
+  border-bottom-style: solid;
+  border-bottom-color: cyan;
+}
+/* #sky {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+      pink 2px,
+      transparent 3px,
+      transparent 30px
+    ),
+    repeating-linear-gradient(
+        90deg,
+        pink 2px,
+        transparent 3px,
+        transparent 40px
+      )
+      10px 0;
+  filter: drop-shadow(0 0 1px magenta) drop-shadow(0 0 3px magenta)
+    drop-shadow(0 0 7px cyan);
+  animation: move 100s linear infinite;
+}
+
+body {
+  height: 100vh;
+  background: black;
+  display: grid; */
+/* place-items: center; */
+/* filter: saturate(130%) contrast(125%);
+}
+
+@keyframes move {
+  to {
+    background-position-y: 2000px;
+  }
+} */
